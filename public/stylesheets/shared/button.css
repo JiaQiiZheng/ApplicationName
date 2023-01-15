@@ -23,6 +23,7 @@
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  justify-self: stretch;
 }
 
 .btn-row {
@@ -41,11 +42,13 @@
 .btn-primary {
   color: var(--color-btn-primary-text);
   background-color: var(--color-btn-primary-background);
+  justify-self: stretch;
 }
 
 .btn-danger {
   color: var(--color-btn-danger-text);
   background-color: var(--color-btn-danger-background);
+  justify-self: stretch;
 }
 
 .btn-primary:hover {

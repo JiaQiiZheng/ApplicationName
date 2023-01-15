@@ -31,13 +31,20 @@
     <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
     <script defer src="javascripts/fileUpload.js"></script>
 
+    <!-- <br>stylesheet -->
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+
     <title>ApplicationName</title>
   </head>
   <body>
-    <%- include('../partials/header.ejs') %>
-    <!-- <br /> -->
-    <%- include('../partials/errorMessage.ejs') %>
-    <!-- <br /> -->
-    <%- body %>
+    <div class="container">
+      <%- include('../partials/header.ejs') %>
+      <div class="inner-container">
+        <!-- <br /> -->
+        <%- include('../partials/errorMessage.ejs') %>
+        <!-- <br /> -->
+        <%- body %>
+      </div>
+    </div>
   </body>
 </html>

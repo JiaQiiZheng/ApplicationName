@@ -27,6 +27,13 @@ const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Mongoose"));
 
+// const uri = process.env.DATABASE_URL;
+// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
+// const connection = mongoose.connection;
+// connection.once("open", () => {
+//   console.log("MongoDB database connection established successfully");
+// });
+
 app.use("/", indexRouter);
 app.use("/authors", authorRouter);
 app.use("/books", bookRouter);
